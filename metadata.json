@@ -1,0 +1,6 @@
+{
+  "name": "Gaïa Stylish Coffee & Food",
+  "description": "A premium, minimalist café experience located in Djerba, Tunisia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

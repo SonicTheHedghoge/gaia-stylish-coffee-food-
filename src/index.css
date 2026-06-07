@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-gold: #D4AF37;
+  --color-gold-hover: #F3E5AB;
+  
+  --color-base-light: #EBE7E0;
+  --color-base-dark: #050505;
+  
+  --color-surface-light: #F4F0EA;
+  --color-surface-dark: #0A0A0A;
+  
+  --color-ink-light: #050505;
+  --color-ink-dark: #F4F0EA;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-base-light text-ink-light antialiased font-sans transition-colors duration-700;
+  }
+  
+  .dark body {
+    @apply bg-base-dark text-ink-dark;
+  }
+  
+  ::selection {
+    @apply bg-gold/50 text-ink-light;
+  }
+  
+  .dark ::selection {
+    @apply bg-gold/50 text-ink-dark;
+  }
+}
+
